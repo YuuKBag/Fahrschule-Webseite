@@ -10,12 +10,11 @@
 <body>
 
     <header class="main-header">
-        <div class="logo">FAHRSCHULE <span class="accent-text">BESA
-        </span></div>
+        <div class="logo">FAHRSCHULE <span class="accent-text">BESA</span></div>
         <nav>
             <a href="#klassen">Klassen</a>
             <a href="#ablauf">Ablauf</a>
-            <a href="#team">Team</a>
+            <a href="#anmelden">Anfrage</a>
             <a href="#kontakt" class="nav-button">Kontakt & Preise</a>
         </nav>
     </header>
@@ -26,7 +25,9 @@
             <p>Starte jetzt durch: modernste Ausbildung, flexible Zeiten und eine hohe Erfolgsquote.</p>
             <a href="#klassen" class="cta-button">Jetzt starten</a>
         </div>
-        <div class="hero-image"></div>
+        <div class="hero-image">
+    <img src="Auto Bild.png" alt="Fahrschüler im modernen Fahrschulauto" style="width:100%; height:100%; object-fit: cover; border-radius: 5px;">
+</div>
     </section>
 
     <section id="klassen" class="section-padding">
@@ -35,7 +36,7 @@
             <div class="card">
                 <h3>Klasse B (PKW)</h3>
                 <p>Der Klassiker. Fahren lernen mit modernen Fahrzeugen und Top-Fahrlehrern.</p>
-                <a href="#" class="details-link">Details ansehen →</a>
+                <a href="klasse-b.html" class="details-link">Details ansehen →</a>
             </div>
             <div class="card">
                 <h3>Klasse A (Motorrad)</h3>
@@ -70,7 +71,46 @@
             </div>
         </div>
     </section>
+<section id="anmelden" class="section-padding">
+        <h2>Direkt <span class="accent-text">anfragen</span> oder Anmelden</h2>
+        <p class="section-subtext">Haben Sie Fragen zu Preisen, Unterrichtszeiten oder dem Ablauf? Schreiben Sie uns!</p>
+        
+        <form class="contact-form" action="deine_verarbeitungsdatei.php" method="POST">
+            
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-Mail Adresse:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
+            <div class="form-group">
+                <label for="klasse">Interessierte Führerscheinklasse:</label>
+                <select id="klasse" name="klasse" required>
+                    <option value="" disabled selected>Bitte wählen</option>
+                    <option value="B">Klasse B (PKW)</option>
+                    <option value="A">Klasse A (Motorrad)</option>
+                    <option value="AM">Klasse AM (Roller)</option>
+                    <option value="andere">Andere Klasse / Frage</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Ihre Nachricht:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="cta-button">Nachricht senden</button>
+        </form>
+
+        <p class="form-note">Wir antworten Ihnen in der Regel innerhalb von 24 Stunden.</p>
+    </section>
+    
+    <footer id="kontakt">
+        </footer>
     <footer id="kontakt">
         <div class="contact-content">
             <h3>Bereit zum Start?</h3>
